@@ -36,13 +36,16 @@ Below is the BibTex for citing this snapshot of the repository.
 This directory contains the folders `src` and `data`:
 - `src`: includes the source codes of the paper.
   - `src/AOAT-NN-Board-Games`: codes for AOAT implemented with NNs applied on board games
+  -  ===========Your part of codes here================
 - `results`: contains results presented in paper.
   - `src/results`: results related to AOAT implemented with NNs applied on board games
+  - ===========Your part of codes here================
 
 ## Dependencies
 - For codes under `src/AOAT-NN-Board-Games`:
   - `python 3.8`
   - `pytorch 1.8.1`
+-  ===========Your part of codes here================
 
 ## Run experiments
 **1. Run experiments related to AOAT implemented with NNs applied on board games**
@@ -74,3 +77,5 @@ python pit.py 1
 where the argument 1 is the random seed.
 
 Modify parameters in the python file `pit.py` to specify AOAT form and considered parameters. After runing this python file, mutiple txt files will be created which contain competing results including number of winning games for each policy. 
+
+**2.===========Your part of codes here================**
