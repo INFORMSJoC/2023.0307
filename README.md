@@ -72,7 +72,7 @@ After running the training script, a new folder `\temp` will be created, which s
 
 ***To compete different forms of AOAT with UCT by using the obtained NNs, run***
 ```Bash
-python pit.py 1
+python3 pit.py 1
 ```
 where the argument 1 is the random seed.
 
