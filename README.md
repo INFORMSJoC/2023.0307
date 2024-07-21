@@ -46,4 +46,31 @@ This directory contains the folders `src` and `data`:
 
 ## Run experiments
 **1. Run experiments related to AOAT implemented with NNs applied on board games**
+
 First cd into folder `src/AOAT-NN-Board-Games`
+
+- Train NNs
+
+The main logic of the training process is shown in the following figure
+
+<img src="https://github.com/xiaotianliu01/AOAP-Value-Network-MCTS/blob/master/diagram.png" width="400" height="300">
+
+For each iteration, the python file *Simulate.py* is used to simulate the games to collect training data, and the python file *Learn.py* is used to train the NN models with the collected training data for one iteration.
+
+***use the script *train.sh* to automatically do the training for multiple iterations***
+```Bash
+sh train.sh
+```
+where you can specify the number of iterations by modifying the file *train.sh*.
+
+All exgeneous parameters are determined in the file *config.py*. The default parameters are used for generating results of Tic-tac-toe game
+
+After running the training script, a new folder `\temp` will be created, which stores obtained models for each iteration. Under this folder, '\Iter1' contains models and data for iteration 1, '\Iter2' contains models and data for iteration 2, ...
+
+***To compete different forms of AOAT with UCT by using the obtained NNs, run***
+```Bash
+python pit.py 1
+```
+where the argument 1 is the random seed.
+
+Modify parameters in the python file `pit.py` to specify AOAT form and considered parameters. After runing this python file, mutiple txt files will be created which contain competing results including number of winning games for each policy. 
