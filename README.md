@@ -43,3 +43,7 @@ This directory contains the folders `src` and `data`:
 - For codes under `src/AOAT-NN-Board-Games`:
   - `python 3.8`
   - `pytorch 1.8.1`
+
+## Run experiments
+**1. Run experiments related to AOAT implemented with NNs applied on board games**
+First cd into folder `src/AOAT-NN-Board-Games`
