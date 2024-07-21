@@ -30,3 +30,16 @@ Below is the BibTex for citing this snapshot of the repository.
   note =          {Available for download at https://github.com/INFORMSJoC/2023.0307},
 }  
 ```
+
+## Description
+
+This directory contains the folders `src` and `data`:
+- `src`: includes the source codes of the paper.
+  - `src/AOAT-NN-Board-Games`: codes for AOAT implemented with NNs applied on board games
+- `results`: contains results presented in paper.
+  - `src/results`: results related to AOAT implemented with NNs applied on board games
+
+## Dependencies
+- For codes under `src/AOAT-NN-Board-Games`:
+  - `python 3.8`
+  - `pytorch 1.8.1`
