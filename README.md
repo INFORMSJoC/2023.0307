@@ -37,6 +37,7 @@ This directory contains the folders `src` and `data`:
 - `src`: includes the source codes of the paper.
   - `src/AOAT-MCTS-Tic-Tac-Toe`: codes for UCT/OCBA-MCTS/AOAT-MCTS/ implemented on Tic-Tac-Toe
   - `src/AOAT-NN-Board-Games`: codes for AOAT implemented with NNs applied on board games
+  - `src/AOAT-NN-Classical-Control`: codes for UCT/AOAT implemented with NNs applied on Cartpole
   - ===========Your part of codes here================
   
 - `results`: contains results presented in paper.
@@ -47,20 +48,20 @@ This directory contains the folders `src` and `data`:
 
 - For codes under `src/AOAT-MCTS-Tic-Tac-Toe`:
   - `python 3.8`
-- For codes under `src/AOAT-NN-Board-Games`:
+- For codes under `src/AOAT-NN-Board-Games` and `src/AOAT-NN-General-RL-Tasks`:
   - `python 3.8`
   - `pytorch 1.8.1`
 -  ===========Your part of codes here================
 
 ## Run experiments
 
-**1. Run experiments related to AOAP-MCTS compard with OCBA-MCTS on Tic-Tac-Toe (Gongbo Zhang)**
+**1. Run experiments related to AOAP-MCTS compard with OCBA-MCTS on Tic-Tac-Toe**
 
 First cd into folder `src/AOAT-MCTS-Tic-Tac-Toe`
 
 Run `tic_tac_toe.py` to obtain resutls
 
-**2. Run experiments related to AOAT implemented with NNs applied on board games (Xiaotian Liu)**
+**2. Run experiments related to AOAT implemented with NNs applied on board games**
 
 First cd into folder `src/AOAT-NN-Board-Games`
 
@@ -90,4 +91,15 @@ where the argument 1 is the random seed.
 
 Modify parameters in the python file `pit.py` to specify AOAT form and considered parameters. After runing this python file, mutiple txt files will be created which contain competing results including number of winning games for each policy. 
 
-**3.===========Your part of codes here================ (Ruihan Zhou)**
+**3. Run experiments related to AOAT implemented with NNs applied on general RL tasks**
+
+### Usage:
+* Train: ```python main.py --env CartPole-v0/v1 --opr train --force ```
+* Test: ```python main.py --env CartPole-v0/v1 ---opr test```
+| Required Arguments   | Description                                           |
+|:---------------------|:------------------------------------------------------|
+| `--env`              | Name of the environment  (CartPole-v0 or CartPole-v1) |
+| `--opr {train,test}` | select the operation to be performed                  |
+* Node selection policy modification： ```src/AOAT-NN-General-RL-Tasks/core/config.py```
+*CartPole parameter modification: ```src/AOAT-NN-General-RL-Tasks/config/cartpole/_init_.py```
+
