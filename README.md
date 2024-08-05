@@ -93,7 +93,7 @@ Modify parameters in the python file `pit.py` to specify AOAT form and considere
 
 **3. Run experiments related to AOAT implemented with NNs applied on general RL tasks**
 
-### Usage:
+*** Usage:
 * Train: ```python main.py --env CartPole-v0/v1 --opr train --force ```
 * Test: ```python main.py --env CartPole-v0/v1 ---opr test```
   
