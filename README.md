@@ -92,6 +92,7 @@ where the argument 1 is the random seed.
 Modify parameters in the python file `pit.py` to specify AOAT form and considered parameters. After runing this python file, mutiple txt files will be created which contain competing results including number of winning games for each policy. 
 
 **3. Run experiments related to AOAT implemented with NNs applied on general RL tasks**
+
 ***Usage:***
 * Train: ```python main.py --env CartPole-v0/v1 --opr train --force ```
 * Test: ```python main.py --env CartPole-v0/v1 ---opr test```
