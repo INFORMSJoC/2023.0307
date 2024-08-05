@@ -102,7 +102,6 @@ Modify parameters in the python file `pit.py` to specify AOAT form and considere
 | `--env`              | Name of the environment  (CartPole-v0 or CartPole-v1) |
 | `--opr {train,test}` | select the operation to be performed                  |
 
-* Node selection policy modification： ```src/AOAT-NN-General-RL-Tasks/core/config.py```
-  
+* Node selection policy modification： ```src/AOAT-NN-General-RL-Tasks/core/config.py```  
 *CartPole parameter modification: ```src/AOAT-NN-General-RL-Tasks/config/cartpole/_init_.py```
 
