@@ -37,21 +37,16 @@ This directory contains the folders `src` and `data`:
 - `src`: includes the source codes of the paper.
   - `src/AOAT-MCTS-Tic-Tac-Toe`: codes for UCT/OCBA-MCTS/AOAT-MCTS/ implemented on Tic-Tac-Toe
   - `src/AOAT-NN-Board-Games`: codes for AOAT implemented with NNs applied on board games
-  - `src/AOAT-NN-Classical-Control`: codes for UCT/AOAT implemented with NNs applied on Cartpole
-  - ===========Your part of codes here================
+  - `src/AOAT-NN-General-RL-Tasks`: codes for UCT/AOAT implemented with NNs applied on Cartpole
   
 - `results`: contains results presented in paper.
   - `src/results`: results related to AOAT implemented with NNs applied on board games
-  - ===========Your part of codes here================
 
 ## Dependencies
 
-- For codes under `src/AOAT-MCTS-Tic-Tac-Toe`:
-  - `python 3.8`
-- For codes under `src/AOAT-NN-Board-Games` and `src/AOAT-NN-General-RL-Tasks`:
+- For codes under `src`:
   - `python 3.8`
   - `pytorch 1.8.1`
--  ===========Your part of codes here================
 
 ## Run experiments
 
